@@ -10,6 +10,12 @@ import (
 )
 
 func main() {
+	/**
+	 *
+	 * This implementation is inspired by the following blog post:
+	 * https://blog.minio.io/debugging-go-routine-leaks-a1220142d32c
+	 *
+	 */
 	http.Handle("/leak/sum", leak.GetSumHandler())
 	http.Handle("/no-leak/sum", noleak.GetSumHandler())
 	http.Handle("/_count", check.GetGoroutinesCountHandler())
