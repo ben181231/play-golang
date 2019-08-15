@@ -4,9 +4,9 @@ import (
 	"log"
 	"net/http"
 
-	"localhost/ben181231/006_goroutine_leak/handler/check"
-	"localhost/ben181231/006_goroutine_leak/handler/leak"
-	"localhost/ben181231/006_goroutine_leak/handler/no_leak"
+	"github.com/ben181231/play-golang/006_goroutine_leak/handler/check"
+	"github.com/ben181231/play-golang/006_goroutine_leak/handler/leak"
+	noleak "github.com/ben181231/play-golang/006_goroutine_leak/handler/no_leak"
 )
 
 func main() {
